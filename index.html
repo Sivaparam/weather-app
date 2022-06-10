@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body class="flex-column min-100-vh">
+
+    <header class="titledisplay">
+        <h1>Weather Dashboard</h1>
+    </header>
+   
+    <main class="flex-row justify-space-between">
+        <div class="col">
+
+            <div class="searcharea">
+                <h3>Search for a City</h3>
+                <input name="place" id="placename" type="text" placeholder="Atlanta" class="place" />
+                <button type="submit" class="search">Search</button>
+                <div >
+                    <button type="button" class="btn">Atlanta</button>
+                    <button type="button" class="btn">Austin</button>
+                    <button type="button" class="btn">Chicago</button>
+                    <button type="button" class="btn">New York</button>
+                    <button type="button" class="btn">Denver</button>
+                    <button type="button" class="btn">San Franscisco</button>
+                    <button type="button" class="btn">Seattle</button>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col col-md-9">
+            <div class="today">
+                <p>Today</p>
+            </div>
+            <div>
+                <h4>5 Day Forecast:</h4>
+                <div class="flex-row justify-space-between">
+                    <span class="future">
+                        1
+                    </span>
+                    <span class="future">2</span>
+                    <span class="future">3</span>
+                    <span class="future">4</span>
+                    <span class="future">5</span>
+                    
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
