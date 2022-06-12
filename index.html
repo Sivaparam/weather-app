@@ -16,50 +16,75 @@
     <header class="titledisplay">
         <h1>Weather Dashboard</h1>
     </header>
-   
+
     <main class="flex-row justify-space-between">
         <div class="col">
 
             <div class="searcharea">
                 <h3>Search for a City</h3>
-                <input name="place" id="placename" type="text" placeholder="Atlanta" class="place" />
-                <button type="submit" class="search">Search</button>
-                <div >
-                    <button type="button" class="btn">Atlanta</button>
-                    <button type="button" class="btn">Austin</button>
-                    <button type="button" class="btn">Chicago</button>
-                    <button type="button" class="btn">New York</button>
-                    <button type="button" class="btn">Denver</button>
-                    <button type="button" class="btn">San Franscisco</button>
-                    <button type="button" class="btn">Seattle</button>
-
-                </div>
+                <input name="place" id="placeName" type="text" placeholder="enter city name" class="place" />
+                <button type="submit" class="search" id="searchBtn">Search</button>
             </div>
-
         </div>
 
         <div class="col col-md-9">
             <div class="today">
                 <p>Today</p>
+                <p>Place: <span id="place"></span></p>
+                <p>Temp: <span id="cTemp"></span></p>
+                <p>Wind: <span id="cWind"></span> MPH</p>
+                <p>Humidity: <span id="cHum"></span></p>
+                <p>UV Index: <span id="cUV"></span></p>
+
             </div>
             <div>
                 <h4>5 Day Forecast:</h4>
                 <div class="flex-row justify-space-between">
-                    <span class="future">
-                        1
-                    </span>
-                    <span class="future">2</span>
-                    <span class="future">3</span>
-                    <span class="future">4</span>
-                    <span class="future">5</span>
-                    
+                    <div class="future">
+                        <p>Date: <span id="f_date_0"></span></p>
+                        <p>Temp: <span id="f_Temp_0"></span></p>
+                        <p>Wind: <span id="f_Wind_0"></span> MPH</p>
+                        <p>Humidity: <span id="f_Hum_0"></span></p>
+                        <p>UV Index: <span id="f_UV_0"></span></p>
+
+                    </div>
+                    <div class="future">
+                        <p>Date: <span id="f_date_1"></span></p>
+                        <p>Temp: <span id="f_Temp_1"></span></p>
+                        <p>Wind: <span id="f_Wind_1"></span> MPH</p>
+                        <p>Humidity: <span id="f_Hum_1"></span></p>
+                        <p>UV Index: <span id="f_UV_1"></span></p>
+                    </div>
+                    <div class="future">
+                        <p>Date: <span id="f_date_2"></span></p>
+                        <p>Temp: <span id="f_Temp_2"></span></p>
+                        <p>Wind: <span id="f_Wind_2"></span> MPH</p>
+                        <p>Humidity: <span id="f_Hum_2"></span></p>
+                        <p>UV Index: <span id="f_UV_2"></span></p>
+                    </div>
+                    <div class="future">
+                        <p>Date: <span id="f_date_3"></span></p>
+                        <p>Temp: <span id="f_Temp_3"></span></p>
+                        <p>Wind: <span id="f_Wind_3"></span> MPH</p>
+                        <p>Humidity: <span id="f_Hum_3"></span></p>
+                        <p>UV Index: <span id="f_UV_3"></span></p>
+                    </div>
+                    <div class="future">
+                        <p>Date: <span id="f_date_4"></span></p>
+                        <p>Temp: <span id="f_Temp_4"></span></p>
+                        <p>Wind: <span id="f_Wind_4"></span> MPH</p>
+                        <p>Humidity: <span id="f_Hum_4"></span></p>
+                        <p>UV Index: <span id="f_UV_4"></span></p>
+                    </div>
                 </div>
             </div>
-
         </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>
 
