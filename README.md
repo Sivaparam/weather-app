@@ -15,10 +15,8 @@ WHEN user views future forecast for that city, THEN user is presented with a 5-d
 
 * Home Page - Weather forecast 
 
-![alt text](assets.images.png)
-
-
+![alt text](./assets/images.png)
 
 github URL: https://github.com/Sivaparam/weather-app
 
-Live URL: 
+Live URL:  https://sivaparam.github.io/weather-app/
