@@ -1,6 +1,6 @@
 var today = moment().format("MM/DD/YYYY");
 var searchButton = document.getElementById("searchBtn");
-var apiKey = "392a991da272b674aa548ec0f5817312";
+var apiKey = "";
 
 // function that gets invoked when search button is clicked
 searchButton.addEventListener("click", getApi);
